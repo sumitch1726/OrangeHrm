@@ -1,8 +1,6 @@
 package com.testingShastra;
 
-import java.sql.Driver;
 
-import org.openqa.selenium.chrome.ChromeDriver;
 //import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
@@ -38,9 +36,8 @@ public class adduser extends TestBase{
 	@Test
 	public void verifyloginAdminUserA() throws InterruptedException {
 		
-		keyword.enterText(locator.username, locator.usernametxt);
-		keyword.enterText(locator.passowrd, locator.passwordtxt);
-		keyword.clickOn(locator.submitbtn);
+		
+		keyword.login(locator.usernametxt,locator.passwordtxt);
 		Thread.sleep(3000);
 		keyword.clickOn(locator.PIM);
 		Thread.sleep(2000);
@@ -55,8 +52,9 @@ public class adduser extends TestBase{
 		keyword.clickOn(locator.adminAddBtn);
 		Thread.sleep(2000);
 		keyword.enterText(locator.empname, locator.firstnamevalue);
-	}
+		
 	
+	}
 	
 	}
 

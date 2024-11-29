@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testingShastra.adduser">
+      <class name="com.testingShastra.Leave">
         <methods>
+          <include name="cancelLeave"/>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="verifyloginAdminUserA"/>
         </methods>
-      </class> <!-- com.testingShastra.adduser -->
+      </class> <!-- com.testingShastra.Leave -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
